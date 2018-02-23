@@ -7,7 +7,7 @@ jupyter/scipy-notebookにopencvを入れたローカル作業用jupyterコンテ
 -----
 
 ```
-$ docker build --pull --rm -t jupyter-scipy-notebook-opencv .
+$ ./docker-build.sh
 ```
 
 実行
