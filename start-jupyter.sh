@@ -1,7 +1,7 @@
 #!/bin/bash
 
 (
-    cd $(dirname $(realpath $0)) 
+    cd $(dirname $0) 
     docker run -p 8888:8888 --rm -it --name=jupyter \
         -u ${UID}:$(id -g) \
         -v ~/:/home/jovyan \
