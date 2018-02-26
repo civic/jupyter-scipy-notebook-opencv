@@ -4,6 +4,9 @@ from IPython.core.magic_arguments import (argument, magic_arguments, parse_argst
 import argparse
 
 def cv_img(image, scale=100, format='.png'):
+    if image is None:
+        display("image is None.")
+        return
     decoded_bytes = cv.imencode(format, image)[1].tobytes()
     display(Image(data=decoded_bytes))
 
