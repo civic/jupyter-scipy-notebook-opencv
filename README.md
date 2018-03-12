@@ -1,7 +1,7 @@
 jupyter-scipy-notebook-opencv
 ================================
 
-jupyter/scipy-notebookにopencvを入れたローカル作業用jupyterコンテナ。
+jupyter/scipy-notebookにopencvを入れたローカル作業用jupyterlabコンテナ。
 
 ビルド
 -----

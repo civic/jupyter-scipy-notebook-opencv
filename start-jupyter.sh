@@ -6,6 +6,7 @@
         -u ${UID}:$(id -g) \
         -v ~/:/home/jovyan \
         -v ${PWD}/support:/opt/conda/lib/python3.6/site-packages/support \
+        -e JUPYTER_ENABLE_LAB=1 \
         jupyter-scipy-notebook-opencv:latest \
         start-notebook.sh \
         --NotebookApp.token='' \
